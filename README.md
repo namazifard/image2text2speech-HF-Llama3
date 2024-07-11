@@ -17,8 +17,8 @@ You can check out the live Streamlit app [here](https://image2text2speech-hf-lms
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/img2audiostory.git
-   cd img2audiostory
+   git clone https://github.com/namazifard/image2text2speech-HF-Llama3.git
+   cd image2text2speech-HF-Llama3
    ```
 
 2. Create and activate a virtual environment:
