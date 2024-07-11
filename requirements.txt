@@ -11,6 +11,7 @@ pydantic_core==2.20.1
 pydeck==0.9.1
 Pygments==2.18.0
 pyparsing==3.0.9
+python-dotenv==1.0.1
 requests==2.32.2
 streamlit==1.36.0
 tokenizers==0.19.1
