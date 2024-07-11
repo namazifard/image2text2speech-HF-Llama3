@@ -50,13 +50,6 @@ Transform your images into engaging audio stories using this Streamlit applicati
 
 3. Upload an image and watch as the application generates a story and converts it into an audio file.
 
-## File Structure
-
-- `app.py`: The main Streamlit application.
-- `requirements.txt`: Lists the dependencies required for the project.
-- `.env`: Environment variables file (not included in the repository, must be created).
-- `README.md`: Project documentation.
-
 ## Dependencies
 
 - `streamlit`: For creating the web interface.
@@ -68,19 +61,5 @@ Transform your images into engaging audio stories using this Streamlit applicati
 ## Models Used
 
 - **Image-to-Text**: `Salesforce/blip-image-captioning-base`
-- **Language Model**: `llama3-70b-8192` for story generation.
+- **Language Model**: `llama3-70b-8192`
 - **Text-to-Speech**: `espnet/kan-bayashi_ljspeech_vits`
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request or open an Issue to discuss any changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Acknowledgements
-
-- [Hugging Face](https://huggingface.co/) for providing the pre-trained models.
-- [Streamlit](https://streamlit.io/) for the easy-to-use web app framework.
-- [Groq](https://www.groq.com/) for the API services.
