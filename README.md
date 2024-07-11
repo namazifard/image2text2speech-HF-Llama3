@@ -1,13 +1,13 @@
 # Image-to-Text and Text-to-Speech Mini Project
 
-Transform your images into engaging audio stories using this Streamlit application. This project leverages machine learning models to generate text descriptions from images and then create short stories based on those descriptions. The final stories can be converted into audio files for an immersive storytelling experience.
+Transform your images into engaging audio stories using this Streamlit application. This project leverages open source machine learning models in Huggingface to generate text descriptions from images and then create short stories based on those descriptions. The final stories can be converted into audio files for an immersive storytelling experience.
 
 ## Features
 
 - **Image Upload**: Supports various image formats including JPG, JPEG, PNG, BMP, and WEBP.
 - **Image-to-Text**: Utilizes a pre-trained image captioning model to generate textual descriptions of uploaded images.
 - **Story Generation**: Uses a language model to create short stories based on the generated descriptions.
-- **Audio Conversion**: Converts the generated stories into audio files.
+- **Audio Conversion**: Converts the generated stories into audio files using a text-to-speech model.
 
 ## Installation
 
@@ -16,6 +16,7 @@ Transform your images into engaging audio stories using this Streamlit applicati
    ```bash
    git clone https://github.com/yourusername/img2audiostory.git
    cd img2audiostory
+   ```
 
 2. Create and activate a virtual environment:
 
@@ -30,10 +31,11 @@ Transform your images into engaging audio stories using this Streamlit applicati
    pip install -r requirements.txt
    ```
 
-4. Set up environment variables by creating a `.env` file in the project root with your Groq API key:
+4. Set up environment variables by creating a `.env` file in the project root with your API tokens:
 
    ```env
    GROQ_API_KEY=your_groq_api_key_here
+   HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token_here
    ```
 
 ## Usage
@@ -61,11 +63,13 @@ Transform your images into engaging audio stories using this Streamlit applicati
 - `transformers`: Provides the pre-trained image captioning and language models.
 - `groq`: Used for interacting with the Groq API.
 - `python-dotenv`: For loading environment variables.
+- `requests`: For making API calls to Hugging Face.
 
 ## Models Used
 
-- **Image-to-Text**: `Salesforce/blip-image-captioning-base` from the Hugging Face Transformers library.
+- **Image-to-Text**: `Salesforce/blip-image-captioning-base`
 - **Language Model**: `llama3-70b-8192` for story generation.
+- **Text-to-Speech**: `espnet/kan-bayashi_ljspeech_vits`
 
 ## Contributing
 
@@ -80,4 +84,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Hugging Face](https://huggingface.co/) for providing the pre-trained models.
 - [Streamlit](https://streamlit.io/) for the easy-to-use web app framework.
 - [Groq](https://www.groq.com/) for the API services.
-
