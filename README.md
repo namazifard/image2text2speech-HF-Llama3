@@ -3,7 +3,7 @@
 Transform your images into engaging audio stories using this Streamlit application. This project leverages open source machine learning models in Huggingface to generate text descriptions from images and then create short stories based on those descriptions. The final stories can be converted into audio files for an immersive storytelling experience.
 
 ## Streamlit App
-You can check out the live Streamlit app ([here](https://image2text2speech-hf-lms-ogfqtf3jrnthgqhruntbfc.streamlit.app/)).
+You can check out the live Streamlit app [here](https://image2text2speech-hf-lms-ogfqtf3jrnthgqhruntbfc.streamlit.app/).
 
 ## Features
 
